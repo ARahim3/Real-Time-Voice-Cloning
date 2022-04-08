@@ -10,12 +10,10 @@ The model is having three independent neural networks trained independently: <br
 3. Vocoder(Auto-Regressive Model): This model generate waveforms from the mel spectogram using the auto-regressive Wavenet based Vocoder network.
 <br><br>
 
-<p align="center">
-<img src="..\model_overview.PNG"/>
-</p>
+![model_overview](model_overview.png)
 
 
-## For Goole Colab
+## For Google Colab
 [Colab Demo](https://colab.research.google.com/drive/1jwN8iVtDqqJI0Zh1o4m1M3GcKX7M5zFK?usp=sharing)
 
 
