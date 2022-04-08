@@ -4,6 +4,20 @@ Multispeaker Text-To-Speech Synthesis](https://arxiv.org/pdf/1806.04558.pdf) (SV
 
 SV2TTS is a deep learning framework in three stages. In the first stage, one creates a digital representation of a voice from a few seconds of audio. In the second and third stages, this representation is used as reference to generate speech given arbitrary text.
 
+The model is having three independent neural networks trained independently: <br>
+1. Speaker Encoder Network(Encoder): This model identifies the speaker based on his voice waveforms and generate an ebedding vector for that speaker.
+2. Synthesizer (Seq-Seq Network): This model is used to create a mel-spectogram from text using embedding vectors of speaker. This model is based on [Tacotron2](https://arxiv.org/abs/1712.05884)
+3. Vocoder(Auto-Regressive Model): This model generate waveforms from the mel spectogram using the auto-regressive Wavenet based Vocoder network.
+<br><br>
+
+<p align="center">
+<img src="..\model_overview.PNG"/>
+</p>
+
+
+## For Goole Colab
+[Colab Demo](https://colab.research.google.com/drive/1jwN8iVtDqqJI0Zh1o4m1M3GcKX7M5zFK?usp=sharing)
+
 
 ## Setup For Local machine
 
